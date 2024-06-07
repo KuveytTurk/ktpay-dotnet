@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework Condition="'$(LibraryFrameworks)'==''">netstandard2.0</TargetFramework>
+		<TargetFramework Condition="'$(LibraryFrameworks)'!=''">$(LibraryFrameworks)</TargetFramework>
+		<NoWarn>$(NoWarn);SYSLIB0021</NoWarn>
+    </PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+	</ItemGroup>
+
+</Project>
