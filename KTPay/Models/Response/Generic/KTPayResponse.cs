@@ -8,7 +8,7 @@
 
         public string ResponseMessage { get; set; }
 
-        public decimal BusinessKey { get; set; }
+        public string BusinessKey { get; set; }
 
         public long TransactionTime { get; set; }
         
